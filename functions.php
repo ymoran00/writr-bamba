@@ -42,7 +42,7 @@ function my_custom_fonts() {
 
 /** Create the category overlay */
 function update_cat_thumbnail ($content) {
-	if ( is_admin()) {
+	if ( is_admin() || is_page()) {
 		return;
 	}
 
