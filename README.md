@@ -2,7 +2,7 @@
 Child theme for [Bamba Bisli blog](http://bambabis.li), based on [Writr theme](https://wordpress.org/themes/writr/). It is intended to be used for blogs only.
 
 The writr-bamba theme adds the following features:
-* Better RTL Support.
+* Change RTL font to Aleph.
 * Category marking on post thumbnails.
 
 ## Installation
