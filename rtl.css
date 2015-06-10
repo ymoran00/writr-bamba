@@ -52,3 +52,34 @@ input[type="submit"] {
 }
 
 
+
+
+/* Sidebar */
+.sidebar-area-2 {
+	float: left;
+}
+#sidebar-extra-toggle {
+	left: 0;
+	right: auto;
+}
+#sidebar-extra-toggle:before,
+#sidebar-extra-toggle:after {
+	border-left: none;
+	border-right: 40px solid transparent;
+}
+#sidebar-extra-toggle:after {
+	right: auto;
+	left: 40px;
+}
+
+
+/* Body */
+body:before {
+	left: auto;
+	right: 0;
+}
+body:after {
+	left: auto;
+	right: 300px;
+}
+

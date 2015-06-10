@@ -73,3 +73,16 @@ function add_tag_icon ($content) {
 }
 add_filter( 'single_tag_title', 'add_tag_icon', 10, 2);
 
+
+function writr_bamba_widgets_init() {
+	register_sidebar( array(
+		'name'          => __( 'Extra Sidebar', 'writr-bamba' ),
+		'id'            => 'sidebar-2',
+		'description'   => __('Widgets here will appear on the other side of test, holding extra (less important) data.', 'writr-bamba'),
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h1 class="widget-title">',
+		'after_title'   => '</h1>',
+	) );
+}
+add_action( 'widgets_init', 'writr_bamba_widgets_init' );

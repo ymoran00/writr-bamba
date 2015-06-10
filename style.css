@@ -292,3 +292,45 @@ a {
     }    
 }
 
+
+body {
+    background-color:  #1abc9c;
+}
+body:before {
+    background-color: inherit;
+}
+
+body:before {
+    left: 0;
+    width: 300px;
+    background: #1abc9c;
+}
+body:after {
+    left: 300px;
+    width: 660px;
+    background: #303030;
+}
+
+#sidebar-extra {
+        background-color: inherit;
+    }
+
+@media only screen and (max-width: 1180px) {
+    body:before {
+        width: 300px;
+    }
+
+    body:after {
+        width: 100px;
+    }
+
+    #sidebar-extra {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    body:after {
+        display: none;
+    }
+}
