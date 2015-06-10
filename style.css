@@ -1,0 +1,294 @@
+/*
+Theme Name: Writr Bamba
+Theme URI: http://bambabis.li/writr-bamba/
+Template: writr
+Author: Yoav Moran
+Author URI: http://bambabis.li/
+Description: Writr Bamba is a Writr child theme. 
+Tags: accessibility-ready,black,custom-background,custom-header,custom-menu,dark,editor-style,featured-images,fixed-layout,flexible-header,full-width-template,green,left-sidebar,light,microformats,post-formats,responsive-layout,right-sidebar,rtl-language-support,sticky-post,theme-options,three-columns,translation-ready,two-columns,white
+Version: 0.4.1430423282
+Text-domain: writr-bamba;
+Updated: 2015-04-30 22:48:02
+*/
+
+@charset "UTF-8";
+@import "../writr/style.css";
+@import "./fonts/awesome/css/font-awesome.min.css";
+
+@font-face {
+    font-family: 'Alef';
+    src: url('fonts/Alef-bold.eot');
+    src: url('fonts/Alef-bold.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Alef-bold.woff') format('woff'),
+         url('fonts/Alef-bold.ttf') format('truetype'),
+         url('fonts/Alef-bold.svg#alefbold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'Alef';
+    src: url('fonts/Alef-regular.eot');
+    src: url('fonts/Alef-regular.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Alef-regular.woff') format('woff'),
+         url('fonts/Alef-regular.ttf') format('truetype'),
+         url('fonts/Alef-regular.svg#alefregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+a {
+	text-decoration: none;
+}
+
+
+
+#sidebar-toggle {
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+.site-logo img {
+	max-width: 90%;
+	border-radius: 50%;
+}
+
+.entry-title,
+.entry-title a {
+    color: #c57c00;
+}
+
+.page-title {
+    background-color: #FF9B00;
+}
+
+/* Sidebar */
+.sidebar-area-2 {
+    position: relative;
+    float: right;
+    width: 300px;
+    padding: 0 40px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing:    border-box;
+    box-sizing:         border-box;
+}
+#sidebar-extra-toggle {
+    display: none;
+    position: absolute;
+    z-index: 3;
+    top: -40px;
+    right: 0;
+    height: 40px;
+    width: 40px;
+    background: #16a085;
+    color: #fff;
+    line-height: 40px;
+    text-align: center;
+    text-decoration: none;
+}
+#sidebar-extra-toggle:before,
+#sidebar-extra-toggle:after {
+    content: '';
+    display: block;
+    position: absolute;
+    border-top: 40px solid #16a085;
+    border-left: 40px solid transparent;
+}
+#sidebar-extra-toggle:before {
+    top: 40px;
+}
+#sidebar-extra-toggle:after {
+    top: 0;
+    right: 40px;
+}
+#sidebar-extra-toggle .genericon {
+    margin-top: 5px;
+    height: 40px;
+    width: 40px;
+    font-size: 40px;
+    line-height: 40px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform:    rotate(45deg);
+    -ms-transform:     rotate(45deg);
+    -o-transform:      rotate(45deg);
+    transform:         rotate(45deg);
+}
+#sidebar-extra-toggle.open .genericon {
+    -webkit-transform: rotate(0deg);
+    -moz-transform:    rotate(0deg);
+    -ms-transform:     rotate(0deg);
+    -o-transform:      rotate(0deg);
+    transform:         rotate(0deg);
+}
+
+
+@media only screen and (max-width: 959px) {
+    .site-logo {
+        max-width: 150px;
+        margin: 10px auto;
+    }
+    .site-logo img {
+        width: 100%;
+    }
+
+    .site-title {
+        font-size: 38px;
+    }
+
+    .site-description {
+        font-size: 22px;
+        font-size: 4.5vw;
+    }
+}
+
+@media only screen and (min-width: 782px) and (max-width: 959px) {
+    .site-description {
+        font-size: 22px;
+        font-size: 3.5vw;
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+    .site-logo {
+        width: 50px;
+        height: 50px;
+        float: right;
+    }
+    .site-logo img {
+        width: 100%;
+        height: 100%
+    }
+
+    .site-branding {
+        float: right;
+        margin-right: 20px;
+    }
+
+    .site-branding > * {
+        text-align: right;
+    }
+
+    .site-description {
+        font-size: 16px;
+        font-size: 4.5vw;
+    }
+}
+
+
+/*   --------    category banner --------- */
+
+.overlay-category-banner {
+  position: absolute;
+  left: 0px; 
+  top: 0px;
+  text-align: center;
+  padding: 12px;
+  margin-bottom: 6px;
+  height: 100px;
+  width: 100px;
+}
+
+.overlay-category-banner:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 51%;
+  /*background: #F2544F; */
+  background-color: #F2544F;
+  -webkit-transform: skew(0deg, 20deg);
+  -moz-transform: skew(0deg, 20deg);
+  -ms-transform: skew(0deg, 20deg);
+  -o-transform: skew(0deg, 20deg);
+  transform: skew(0deg, 20deg);
+}
+.overlay-category-banner:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin-top: -12px;
+  width: 63px;
+  height: 30px;
+  /* background-color: #F2544F; */
+  background-color: #F2544F;
+}
+
+.overlay-category-container {
+    position: absolute;
+    left: 20px; 
+    top: 70px;
+    color: white;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+}
+
+.overlay-category-container > span,
+.overlay-category-container > i {
+    position: absolute;
+    color: white;
+    left: 0px;
+    width: 63px;
+    text-align: center;
+}
+
+.overlay-category-container > span {
+    top: 50px;
+    font-size: 14px;
+    /*font-size: 1.3vw;*/
+}
+
+.overlay-category-container i {
+    font-size: 1.8em;
+    top: 20px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .overlay-category-banner {
+      height: 80px;
+      width: 80px;
+    }
+
+
+    .overlay-category-banner:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      margin-top: -10px;
+      width: 52px;
+      height: 30px;
+      /*background-color: #F2544F;*/
+      background-color: #F2544F;
+    }
+
+    .overlay-category-container {
+        width: 80px;
+        height: 80px;
+    }
+
+    .overlay-category-container > span,
+    .overlay-category-container > i {
+        width: 52px;
+    }
+
+    .overlay-category-container > span {
+        top: 40px;
+        font-size: 12px;
+        /*font-size: 1.3vw;*/
+    }
+
+    .overlay-category-container i {
+        font-size: 1.5em;
+        top: 15px;
+    }    
+}
+

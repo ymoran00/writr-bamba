@@ -1,0 +1,19 @@
+textarea {
+	direction: ltr;
+}
+
+#wpadminbar,
+.settings_page_image-regenerate-select-crop-settings #wpbody-content,
+.settings_page_category_meta #wpbody-content,
+.appearance_page_themecheck #wpbody-content
+ {
+	direction: ltr;
+	left: 0;
+	right: inherit;
+}
+
+.wp-submenu a[href="options-general.php"] {
+direction: ltr;
+	left: 0;
+	right: inherit;
+}

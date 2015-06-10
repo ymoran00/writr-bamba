@@ -1,0 +1,54 @@
+/*
+Theme Name: Writr Bamba
+Template: writr
+*/
+@import "../writr/rtl.css";
+
+
+/* =Global
+----------------------------------------------- */
+
+body,
+button,
+input,
+select,
+textarea {
+	font-family: "Alef", Arial, sans-serif;
+}
+
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	font-weight: normal;
+}
+
+.main-navigation,
+.more-link,
+#content .post-navigation,
+#content .paging-navigation,
+#content .comment-navigation,
+.comments-title,
+#respond .comment-reply-title,
+.comment-author,
+.comment-metadata,
+#infinite-handle span,
+.comment-content .pd-rating {
+	font-weight: normal;
+}
+
+.widget_archive ul a,
+.widget_categories ul a,
+.widget_links ul a,
+.widget_nav_menu ul a,
+.widget_meta ul a,
+.widget_pages ul a,
+.widget_recent_comments ul a,
+.widget_recent_entries ul a,
+.widget_rss ul a,
+.widget_rss_links ul a {
+	font-weight: normal;
+}
+
+
