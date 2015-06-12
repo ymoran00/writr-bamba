@@ -39,6 +39,17 @@ function my_custom_fonts() {
   wp_enqueue_style( 'admin-child', trailingslashit(get_stylesheet_directory_uri()) . '/admin.css' );
 }
 
+function _get_category_icon() {
+	$cats = get_the_category();
+	if (function_exists('get_terms_meta'))
+	{
+		$iconPostfixArr = get_terms_meta($cats[0]->term_id, 'icon'); // For PHP < 5.4
+	    $iconPostfix = $iconPostfixArr[0];
+	} else {
+		$iconPostfix = 'tags';
+	}
+	return $iconPostfix;
+}
 
 /** Create the category overlay */
 function update_cat_thumbnail ($content) {
@@ -46,14 +57,9 @@ function update_cat_thumbnail ($content) {
 		return;
 	}
 
-	$cats = get_the_category();
+	 $cats = get_the_category();
 
-	if (function_exists('get_terms_meta'))
-	{
-	    $iconPostfix = get_terms_meta($cats[0]->term_id, 'icon')[0];
-	} else {
-		$iconPostfix = 'tags';
-	}
+	$iconPostfix = _get_category_icon();
 
 	$categoryName = $cats[0]->name;
 
@@ -68,8 +74,15 @@ function update_cat_thumbnail ($content) {
 
 add_filter( 'post_thumbnail_html', 'update_cat_thumbnail');
 
-function add_tag_icon ($content) {
+function fix_tag_title ($content) {
 	return "<i class='fa fa-tag'></i> &nbsp" . $content;
 }
-add_filter( 'single_tag_title', 'add_tag_icon', 10, 2);
+add_filter( 'single_tag_title', 'fix_tag_title', 10, 2);
+
+
+function fix_category_title ($content) {
+	$iconPostfix = _get_category_icon();
+	return "<i class='fa fa-" . $iconPostfix . "'></i> &nbsp" . $content;
+}
+add_filter( 'single_cat_title','fix_category_title', 10, 2);
 
