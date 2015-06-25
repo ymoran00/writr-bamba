@@ -1,0 +1,21 @@
+.tag-fill {
+    fill: #F2544F;
+}
+
+.tag-name {
+    fill: white;
+    direction: ltr;
+    font-size: 150px;
+    text-align: center;
+}
+
+.tag-icon {
+    fill: white;
+    font-family: FontAwesome;
+    direction: ltr;
+    font-size: 200px;
+}
+
+svg {
+    text-align: center;
+}

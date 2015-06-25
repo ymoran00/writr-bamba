@@ -182,43 +182,6 @@ a {
 
 /*   --------    category banner --------- */
 
-.overlay-category-banner {
-  position: absolute;
-  left: 0px; 
-  top: 0px;
-  text-align: center;
-  padding: 12px;
-  margin-bottom: 6px;
-  height: 100px;
-  width: 100px;
-}
-
-.overlay-category-banner:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 51%;
-  /*background: #F2544F; */
-  background-color: #F2544F;
-  -webkit-transform: skew(0deg, 20deg);
-  -moz-transform: skew(0deg, 20deg);
-  -ms-transform: skew(0deg, 20deg);
-  -o-transform: skew(0deg, 20deg);
-  transform: skew(0deg, 20deg);
-}
-.overlay-category-banner:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  margin-top: -12px;
-  width: 63px;
-  height: 30px;
-  /* background-color: #F2544F; */
-  background-color: #F2544F;
-}
 
 .overlay-category-container {
     position: absolute;
@@ -248,6 +211,13 @@ a {
 .overlay-category-container i {
     font-size: 1.8em;
     top: 20px;
+}
+
+
+.tag-container {
+    position: absolute;
+    left: 20px; 
+    top: 57px;
 }
 
 
