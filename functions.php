@@ -62,14 +62,15 @@ function update_cat_thumbnail ($content) {
 	$iconPostfix = _get_category_icon();
 
 	$categoryName = $cats[0]->name;
-	$overlay = "<div class='tag-container'>".
+	$categorySlug = $cats[0]->slug;
+	$overlay = "<a href='category/" . $categorySlug . "' class='tag-container'>".
 					"<object type='image/svg+xml' data='" .
 							get_stylesheet_directory_uri() . "/tag.svg'>" . 
 							"<param name='tname' value='" . $categoryName . "'/>" .
 					"</object>" .
 					"<span class='tag-name'>" . $categoryName . "</span>" .
 					"<i class='tag-icon fa fa-" . $iconPostfix . "'></i>" .
-				"</div>";
+				"</a>";
 	$content = $overlay . $content;
 	return $content;
 }
