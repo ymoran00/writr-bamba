@@ -1,15 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<?xml-stylesheet href="tag-svg.css" type="text/css"?>
 <svg width="50px" height="110px" viewBox="0 0 500 1100"
      xmlns="http://www.w3.org/2000/svg" version="1.1"
      xmlns:xlink="http://www.w3.org/1999/xlink">
   
-  <path class="tag-fill"  d="M 0,0 L 500,0 L 500,1100 L 0,1000 Z"/>
-  <g>
-    <text class="tag-icon" text-anchor="middle" x="250px" y="580px" width="500px">&#xf1b9;</text>
-  </g>
-  <text class="tag-name" text-anchor="middle" 
-        x="250px" y="820px" width="500px" 
-        font-size="140" content-value="param(tname)">טוען...</text>
-  <script type="text/ecmascript" xlink:href="js/param.js" /> 
+  <path style="fill: #F2544F"
+    d="M 0,0 L 500,0 L 500,1100 L 0,1000 Z"/>
 </svg>

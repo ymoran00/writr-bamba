@@ -182,85 +182,34 @@ a {
 
 /*   --------    category banner --------- */
 
-
-.overlay-category-container {
-    position: absolute;
-    left: 20px; 
-    top: 70px;
-    color: white;
-    width: 100px;
-    height: 100px;
-    text-align: center;
-}
-
-.overlay-category-container > span,
-.overlay-category-container > i {
-    position: absolute;
-    color: white;
-    left: 0px;
-    width: 63px;
-    text-align: center;
-}
-
-.overlay-category-container > span {
-    top: 50px;
-    font-size: 14px;
-    /*font-size: 1.3vw;*/
-}
-
-.overlay-category-container i {
-    font-size: 1.8em;
-    top: 20px;
-}
-
-
 .tag-container {
     position: absolute;
     left: 20px; 
     top: 57px;
 }
 
-
-@media only screen and (max-width: 600px) {
-    .overlay-category-banner {
-      height: 80px;
-      width: 80px;
-    }
-
-
-    .overlay-category-banner:after {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 0;
-      margin-top: -10px;
-      width: 52px;
-      height: 30px;
-      /*background-color: #F2544F;*/
-      background-color: #F2544F;
-    }
-
-    .overlay-category-container {
-        width: 80px;
-        height: 80px;
-    }
-
-    .overlay-category-container > span,
-    .overlay-category-container > i {
-        width: 52px;
-    }
-
-    .overlay-category-container > span {
-        top: 40px;
-        font-size: 12px;
-        /*font-size: 1.3vw;*/
-    }
-
-    .overlay-category-container i {
-        font-size: 1.5em;
-        top: 15px;
-    }    
+.tag-icon {
+    color: white;
+    font-family: 'FontAwesome';
+    font-size: 25px;
+    position: absolute;
+    top: 36px;
+    left: 0;
+    width: 100%;
+    margin: 0 auto;
 }
+
+.tag-name {
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    font-size: 15px;
+    color: white;
+    font-family: 'Alef';
+    width: 100%;
+    top: 65px;
+}
+
 
 .entry-content > ol li,
 .entry-content > ul li {

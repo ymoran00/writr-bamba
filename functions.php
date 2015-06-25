@@ -62,18 +62,14 @@ function update_cat_thumbnail ($content) {
 	$iconPostfix = _get_category_icon();
 
 	$categoryName = $cats[0]->name;
-	$overlay = "<object class='tag-container' type='image/svg+xml' data='" .
-	get_stylesheet_directory_uri() . "/tag.svg'>" . 
-	"<param name='tname' value='" . $categoryName . "'/></object>";
-	//$overlay = file_get_contents(get_stylesheet_directory_uri() . "/tag.svg");
-	//$overlay = "<img src='" . get_stylesheet_directory_uri() . "/tag.svg' alt=''>";
-	/*
-
-	$overlay = "<div class='overlay-category-container'>" .
-					"<div class='overlay-category-banner'></div>" .
-					"<i class='fa fa-" . $iconPostfix . "'></i>" .
-					"<span>" . $categoryName . "</span>" .
-				"</div>"; */
+	$overlay = "<div class='tag-container'>".
+					"<object type='image/svg+xml' data='" .
+							get_stylesheet_directory_uri() . "/tag.svg'>" . 
+							"<param name='tname' value='" . $categoryName . "'/>" .
+					"</object>" .
+					"<span class='tag-name'>" . $categoryName . "</span>" .
+					"<i class='tag-icon fa fa-" . $iconPostfix . "'></i>" .
+				"</div>";
 	$content = $overlay . $content;
 	return $content;
 }
