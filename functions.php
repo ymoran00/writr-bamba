@@ -11,7 +11,6 @@ if ( !defined( 'ABSPATH' ) ) exit;
  */
 function my_child_theme_setup() {
     load_child_theme_textdomain( 'writr-bamba', get_stylesheet_directory() . '/languages' );
-    load_child_theme_textdomain( 'writr', get_stylesheet_directory() . '/languages' );
 }
 add_action( 'after_setup_theme', 'my_child_theme_setup' );
 
@@ -85,7 +84,9 @@ add_filter( 'single_tag_title', 'fix_tag_title', 10, 2);
 
 function fix_category_title ($content) {
 	$iconPostfix = _get_category_icon();
-	return "<i class='fa fa-" . $iconPostfix . "'></i> &nbsp" . $content;
+	return "<i class='fa fa-" . $iconPostfix . "'></i> &nbsp" . __('Category:', 'writr-bamba') . " " . $content;
 }
 add_filter( 'single_cat_title','fix_category_title', 10, 2);
+
+add_action('wp_enqueue_scripts', create_function(null, "wp_dequeue_script('devicepx');"), 20);
 

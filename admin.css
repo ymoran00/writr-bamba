@@ -5,7 +5,9 @@ textarea {
 #wpadminbar,
 .settings_page_image-regenerate-select-crop-settings #wpbody-content,
 .settings_page_category_meta #wpbody-content,
-.appearance_page_themecheck #wpbody-content
+.appearance_page_themecheck #wpbody-content,
+.loco-translate_page_loco-translate-settings #wpbody-content,
+#contextual-help-wrap
  {
 	direction: ltr;
 	left: 0;
