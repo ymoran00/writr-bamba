@@ -9,6 +9,7 @@ The writr-bamba theme adds the following features:
 
 This theme needs to have the following plugins installed as well:
 * [wp-category-meta](https://wordpress.org/plugins/wp-category-meta/). Install plugin and add a category meta field called "icon", type Text.
+* [Loco Translate](https://wordpress.org/plugins/loco-translate/) (optional). Supports multilanguage translation of theme.
 
 ## Features
 
