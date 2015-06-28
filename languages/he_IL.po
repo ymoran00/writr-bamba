@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Writr Bamba\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: Sat Jun 27 2015 08:28:04 GMT+0300 (IDT)\n"
-"PO-Revision-Date: Sat Jun 27 2015 22:42:15 GMT+0300 (IDT)\n"
+"PO-Revision-Date: Sun Jun 28 2015 20:21:50 GMT+0300 (IDT)\n"
 "Last-Translator: ymoran00 <yoav.moran@gmail.com>\n"
 "Language-Team: \n"
 "Language: Hebrew\n"
@@ -23,11 +23,9 @@ msgstr ""
 "X-Loco-Target-Locale: he_IL"
 
 #: ../functions.php:87
-msgctxt "Header of a category list"
 msgid "Category:"
 msgstr "קטגוריה:"
 
 #: ../functions.php:80
-msgctxt "Header of a tag list"
 msgid "Tag:"
 msgstr "תווית:"
