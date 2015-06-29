@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: Writr Bamba\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: Sat Jun 27 2015 08:28:04 GMT+0300 (IDT)\n"
-"POT-Revision-Date: Sat Jun 27 2015 08:39:08 GMT+0300 (IDT)\n"
+"POT-Revision-Date: Mon Jun 29 2015 16:29:10 GMT+0300 (IDT)\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -24,12 +24,19 @@ msgstr ""
 "esc_html_x:1,2c;comments_number_link:2,3;t:1;st:1;trans:1;transChoice:1,2\n"
 "X-Generator: Loco - https://localise.biz/"
 
-#: ../functions.php:80
-msgctxt "Header of a tag list"
+#: ../functions.php:103
 msgid "Tag:"
 msgstr ""
 
-#: ../functions.php:87
-msgctxt "Header of a category list"
+#: ../functions.php:110
 msgid "Category:"
+msgstr ""
+
+#: inc/template-tags.php:38
+msgid "<span class=\"genericon genericon-leftarrow\"></span> %title"
+msgstr ""
+
+
+#: inc/template-tags.php:39
+msgid "%title <span class=\"genericon genericon-rightarrow\"></span>"
 msgstr ""

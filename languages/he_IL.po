@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Writr Bamba\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: Sat Jun 27 2015 08:28:04 GMT+0300 (IDT)\n"
-"PO-Revision-Date: Sun Jun 28 2015 20:21:50 GMT+0300 (IDT)\n"
+"PO-Revision-Date: Mon Jun 29 2015 16:47:35 GMT+0300 (IDT)\n"
 "Last-Translator: ymoran00 <yoav.moran@gmail.com>\n"
 "Language-Team: \n"
 "Language: Hebrew\n"
@@ -22,10 +22,18 @@ msgstr ""
 "X-Generator: Loco - https://localise.biz/\n"
 "X-Loco-Target-Locale: he_IL"
 
-#: ../functions.php:87
+#: ../functions.php:103
+msgid "Tag:"
+msgstr "תווית:"
+
+#: ../functions.php:110
 msgid "Category:"
 msgstr "קטגוריה:"
 
-#: ../functions.php:80
-msgid "Tag:"
-msgstr "תווית:"
+#: inc/template-tags.php:38
+msgid "<span class=\"genericon genericon-leftarrow\"></span> %title"
+msgstr "<span class=\"genericon genericon-rightarrow\"></span> %title"
+
+#: inc/template-tags.php:39
+msgid "%title <span class=\"genericon genericon-rightarrow\"></span>"
+msgstr "%title <span class=\"genericon genericon-leftarrow\"></span>"

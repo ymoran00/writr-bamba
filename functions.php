@@ -9,7 +9,7 @@ if ( !defined( 'ABSPATH' ) ) exit;
  * Translations can be filed in the /languages/ directory.
  */
 function my_child_theme_setup() {
-    load_child_theme_textdomain( 'writr-bamba', get_stylesheet_directory() . '/languages' );
+	load_child_theme_textdomain( 'writr', get_stylesheet_directory() . '/languages' );
 }
 add_action( 'after_setup_theme', 'my_child_theme_setup' );
 
@@ -100,14 +100,14 @@ function update_cat_thumbnail ($content) {
 add_filter( 'post_thumbnail_html', 'update_cat_thumbnail');
 
 function fix_tag_title ($content) {
-	return "<i class='fa fa-tag'></i>  " . __('Tag:', 'writr-bamba') . " " . $content;
+	return "<i class='fa fa-tag'></i>  " . __('Tag:', 'writr') . " " . $content;
 }
 add_filter( 'single_tag_title', 'fix_tag_title', 10, 2);
 
 
 function fix_category_title ($content) {
 	$iconPostfix = _get_category_icon();
-	return "<i class='fa fa-" . $iconPostfix . "'></i>  " . __('Category:', 'writr-bamba') . " " . $content;
+	return "<i class='fa fa-" . $iconPostfix . "'></i>  " . __('Category:', 'writr') . " " . $content;
 }
 add_filter( 'single_cat_title','fix_category_title', 10, 2);
 
