@@ -15,6 +15,8 @@ Updated: 2015-04-30 22:48:02
 @import "../writr/style.css";
 @import "./fonts/awesome/css/font-awesome.min.css";
 
+@import './editor-style.css';
+
 @font-face {
     font-family: 'Alef';
     src: url('fonts/Alef-bold.eot');
@@ -177,6 +179,10 @@ a {
         font-size: 16px;
         font-size: 4.5vw;
     }
+}
+
+blockquote p {
+  display: inline;
 }
 
 

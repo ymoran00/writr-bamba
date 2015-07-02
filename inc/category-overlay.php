@@ -1,13 +1,10 @@
 <?php
 /**
- * Custom functions that act independently of the theme templates
+ * Overlay on post thumbnail, showing category info (icon + text)
  *
- * Eventually, some of the functionality here could be replaced by core features
- *
- * @package Writr
+ * @package Writr Bamba
  */
 
-/** Create the category overlay */
 
 $category_colors = array (
 	"#f44336",

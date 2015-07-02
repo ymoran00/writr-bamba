@@ -17,6 +17,7 @@ textarea {
 .wp-admin.plugins-php #wpbody-content,
 .wp-admin.jetpack-pagestyles #wpbody-content,
 .wp-admin.post-new-php #wpbody-content,
+.wp-admin.post-php #wpbody-content,
 .wp-admin.update-php #wpbody-content {
 	direction: rtl;
 	right: 0;
@@ -28,3 +29,4 @@ direction: ltr;
 	left: 0;
 	right: inherit;
 }
+

@@ -10,19 +10,13 @@ if ( !defined( 'ABSPATH' ) ) exit;
  */
 function my_child_theme_setup() {
 	load_child_theme_textdomain( 'writr', get_stylesheet_directory() . '/languages' );
+
+	add_editor_style();
 }
-add_action( 'after_setup_theme', 'my_child_theme_setup' );
+add_action( 'after_setup_theme', 'my_child_theme_setup' , 20);
 
 // END ENQUEUE PARENT ACTION
 
-
-if (!is_admin()) add_action( "wp_enqueue_script", "my_jquery_enqueue", 11 );
-function my_jquery_enqueue () {
-	wp_deregister_script('jquery' );
-	wp_register_script('jquery', "http" . ($_SERVER['SERVER_PORT']==443?"s":"") . "://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js", false, null );
-	//wp_register_script('jquery', "//code.jquery.com/jquery-1.11.3.min.js", false, null );
-	wp_enqueue_script('jquery' );
-}
 
 // Set the FavIcon
 function childtheme_favicon() { ?>
@@ -31,11 +25,19 @@ function childtheme_favicon() { ?>
 add_action('wp_head', 'childtheme_favicon');
 
 
-add_action('admin_head', 'my_custom_fonts');
 
-function my_custom_fonts() {
-  wp_enqueue_style( 'admin-child', trailingslashit(get_stylesheet_directory_uri()) . '/admin.css' );
+function bamba_scripts () {
+	
 }
+add_action( 'wp_enqueue_scripts', 'bamba_scripts' ,20);
+
+
+function bamba_admin_scripts() {
+	wp_enqueue_style( 'admin-child', trailingslashit(get_stylesheet_directory_uri()) . '/admin.css' );
+
+}
+add_action( 'admin_enqueue_scripts', 'bamba_admin_scripts' );
+
 
 function _get_category_icon() {
 	$cats = get_the_category();
@@ -49,20 +51,21 @@ function _get_category_icon() {
 	return $iconPostfix;
 }
 
-function fix_tag_title ($content) {
-	return "<i class='fa fa-tag'></i>  " . __('Tag:', 'writr') . " " . $content;
-}
-add_filter( 'single_tag_title', 'fix_tag_title', 10, 2);
-
-
-function fix_category_title ($content) {
-	$iconPostfix = _get_category_icon();
-	return "<i class='fa fa-" . $iconPostfix . "'></i>  " . __('Category:', 'writr') . " " . $content;
-}
-add_filter( 'single_cat_title','fix_category_title', 10, 2);
+/**
+ * Skeleton text.
+ */
+require get_stylesheet_directory() . '/inc/skeleton-text.php';
 
 
 /**
  * Category Overlay.
  */
 require get_stylesheet_directory() . '/inc/category-overlay.php';
+
+
+/**
+ * Add custom style.
+ */
+require get_stylesheet_directory() . '/inc/add-custom-style.php';
+
+

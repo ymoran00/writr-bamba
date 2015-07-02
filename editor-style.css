@@ -1,0 +1,44 @@
+
+
+p.ltr {
+    direction: ltr;
+}
+
+p.rtl {
+    direction: rtl;
+}
+
+aside.sidenote {
+	color: red;
+}
+
+
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px double #1ABC9C;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+  padding: 10px 8px;
+}
+blockquote:before {
+  color: #1ABC9C;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
+
+.rtl blockquote {
+  quotes: "\201D""\201C""\2019""\2018";
+  border-right: 10px double #1ABC9C;
+  border-left: 0px none;
+  padding: 10px 8px;
+}
+
+.rtl blockquote:before {
+  margin-left: 0.25em;
+  margin-right: inherit;
+}
