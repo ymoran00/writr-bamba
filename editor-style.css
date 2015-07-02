@@ -9,7 +9,11 @@ p.rtl {
 }
 
 aside.sidenote {
-	color: red;
+	color: #7f7f7f;
+  background-color: #efefef;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  font-style: italic;
 }
 
 
