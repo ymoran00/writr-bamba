@@ -31,6 +31,8 @@ function update_cat_thumbnail ($content) {
 	if ( is_admin() || is_page()) {
 		return;
 	}
+	if (!$content)
+		return;
 
 	 $cats = get_the_category();
 
