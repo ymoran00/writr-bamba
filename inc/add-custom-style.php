@@ -23,20 +23,20 @@ function my_mce_before_init_insert_formats( $init_array ) {
 	$style_formats = array(  
 		// Each array child is a format with it's own settings
 		array(  
-			'title' => 'Sidenote',  
+			'title' => __('Sidenote', 'writr'),  
 			'block' => 'aside',  
 			'classes' => 'sidenote',
 			'wrapper' => false,
 		),
 		array(  
-			'title' => 'Left-to-Right',  
+			'title' => __('Left-to-Right', 'writr'),  
 			'block' => 'p',  
 			'classes' => 'ltr',
 			'wrapper' => false,
 
 		), 
 		array(  
-			'title' => 'Right-to-Left',  
+			'title' => __('Right-to-Left', 'writr'),  
 			'block' => 'p',  
 			'classes' => 'rtl',
 			'wrapper' => false,

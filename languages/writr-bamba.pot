@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: Writr Bamba\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: Sat Jun 27 2015 08:28:04 GMT+0300 (IDT)\n"
-"POT-Revision-Date: Mon Jun 29 2015 16:29:10 GMT+0300 (IDT)\n"
+"POT-Revision-Date: Thu Jul 02 2015 21:14:56 GMT+0300 (IDT)\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -36,7 +36,15 @@ msgstr ""
 msgid "<span class=\"genericon genericon-leftarrow\"></span> %title"
 msgstr ""
 
-
 #: inc/template-tags.php:39
 msgid "%title <span class=\"genericon genericon-rightarrow\"></span>"
+msgstr ""
+
+msgid "Sidenote"
+msgstr ""
+
+msgid "Left-to-Right"
+msgstr ""
+
+msgid "Right-to-Left"
 msgstr ""
