@@ -194,6 +194,12 @@ blockquote p {
     top: 57px;
 }
 
+.tag-container:hover {
+    -webkit-filter: drop-shadow( 5px 5px 5px #000 );
+            filter: drop-shadow( 5px 5px 5px #000 );
+    transform: translate3d(-5px, -5px, -5px);
+}
+
 .tag-icon {
     color: white;
     font-family: 'FontAwesome';
