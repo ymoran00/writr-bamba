@@ -22,7 +22,7 @@ blockquote {
   border-left: 10px double #1ABC9C;
   margin: 1.5em 10px;
   padding: 0.5em 10px;
-  quotes: "\201C""\201D""\2018""\2019";
+  quotes: "\201C""\201D";
   padding: 10px 8px;
 }
 blockquote:before {
@@ -36,7 +36,7 @@ blockquote:before {
 
 
 .rtl blockquote {
-  quotes: "\201D""\201C""\2019""\2018";
+  quotes: "\201D""\201C";
   border-right: 10px double #1ABC9C;
   border-left: 0px none;
   padding: 10px 8px;
