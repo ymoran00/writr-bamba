@@ -64,8 +64,16 @@ a {
     color: #c57c00;
 }
 
+.entry-thumbnail {
+    overflow: visible;
+}
+
 .page-title {
     background-color: #FF9B00;
+}
+
+.main-navigation {
+    text-transform: initial;
 }
 
 /* Sidebar */
@@ -186,18 +194,41 @@ blockquote p {
 }
 
 
+.entry-content > ol li,
+.entry-content > ul li {
+    text-indent: -1em;
+    margin-left: 1em;
+}
+
+
 /*   --------    category banner --------- */
+
+.entry-thumbnail {
+    position: relative;
+    overflow: visible;
+}
 
 .tag-container {
     position: absolute;
-    left: 20px; 
-    top: 57px;
+    right: 40px; 
+    top: -5px;
+}
+
+@media only screen and (max-width: 480px) {
+
+    .tag-container {
+        right: 20px; 
+    }
 }
 
 .tag-container:hover {
-    -webkit-filter: drop-shadow( 5px 5px 5px #000 );
-            filter: drop-shadow( 5px 5px 5px #000 );
-    transform: translate3d(-5px, -5px, -5px);
+    -webkit-filter: drop-shadow( -5px 5px 5px #000 );
+            filter: drop-shadow( -5px 5px 5px #000 );
+    transform: translate3d(5px, -5px, -5px);
+}
+
+.tag-container i {
+    display: block;
 }
 
 .tag-icon {
@@ -206,7 +237,6 @@ blockquote p {
     font-size: 25px;
     position: absolute;
     top: 36px;
-    left: 0;
     width: 100%;
     margin: 0 auto;
 }
@@ -220,11 +250,4 @@ blockquote p {
     font-family: 'Alef';
     width: 100%;
     top: 65px;
-}
-
-
-.entry-content > ol li,
-.entry-content > ul li {
-    text-indent: -1em;
-    margin-left: 1em;
 }

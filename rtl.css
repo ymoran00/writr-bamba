@@ -63,3 +63,23 @@ input[type="submit"] {
     margin-left: 1em;
     margin-right: 0;
 }
+
+/*   --------    category banner --------- */
+
+.tag-container {
+    left: 40px; 
+    right: inherit;
+}
+
+@media only screen and (max-width: 480px) {
+
+    .tag-container {
+        left: 20px; 
+    }
+}
+
+.tag-container:hover {
+    -webkit-filter: drop-shadow( 5px 5px 5px #000 );
+            filter: drop-shadow( 5px 5px 5px #000 );
+    transform: translate3d(-5px, -5px, -5px);
+}

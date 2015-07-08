@@ -43,13 +43,13 @@ function update_cat_thumbnail ($content) {
 	$categoryId = $cats[0]->term_id; 
 	$categoryColor = $category_colors[intval($categoryId) % sizeof($category_colors)];
 	$overlay = "<a href='" . esc_url( get_category_link($categoryId) ) . "' class='tag-container'>" . 
-					"<svg width='50px' height='110px' viewBox='0 0 500 1100' xmlns='http://www.w3.org/2000/svg' version='1.1'>" .  
-  						"<path style='fill: " . $categoryColor ."'" .
-    						"d='M 0,0 L 500,0 L 500,1100 L 0,1000 Z'/>" .
-					"</svg>" .
-					"<span class='tag-name'>" . $categoryName . "</span>" .
-					"<i class='tag-icon fa fa-" . $iconPostfix . "'></i>" .
-				"</a>";
+						"<svg width='50px' height='110px' viewBox='0 0 500 1100' xmlns='http://www.w3.org/2000/svg' version='1.1'>" .  
+	  						"<path style='fill: " . $categoryColor ."'" .
+	    						"d='M 0,0 L 500,0 L 500,1100 L 0,1000 Z'/>" .
+						"</svg>" .
+						"<span class='tag-name'>" . $categoryName . "</span>" .
+						"<i class='tag-icon fa fa-" . $iconPostfix . "'></i>" .
+					"</a>" ;
 	$content = $overlay . $content;
 	return $content;
 }
