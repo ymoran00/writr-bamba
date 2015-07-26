@@ -15,7 +15,7 @@ Updated: 2015-04-30 22:48:02
 @import "../writr/style.css";
 @import "./fonts/awesome/css/font-awesome.min.css";
 
-@import './editor-style.css';
+@import './editor-common-style.css';
 
 @font-face {
     font-family: 'Alef';
@@ -191,6 +191,11 @@ a {
 
 blockquote p {
   display: inline;
+}
+
+blockquote p.rtl,
+blockquote p.ltr, {
+  display: initial;
 }
 
 

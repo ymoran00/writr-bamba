@@ -29,6 +29,11 @@ function my_mce_before_init_insert_formats( $init_array ) {
 			'wrapper' => false,
 		),
 		array(  
+			'title' => __('Footer', 'writr'),  
+			'block' => 'footer',  
+			'wrapper' => false,
+		),
+		array(  
 			'title' => __('Left-to-Right', 'writr'),  
 			'block' => 'p',  
 			'classes' => 'ltr',
