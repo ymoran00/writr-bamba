@@ -256,3 +256,23 @@ blockquote p.ltr, {
     width: 100%;
     top: 65px;
 }
+
+
+.sd-sharing-enabled {
+	border-top: none;
+	border-bottom: none;
+}
+
+.jetpack-likes-widget-wrapper {
+	border-top: none;
+	border-bottom: none;
+}
+
+/* ---- footnotes ----- */
+.footnotes {
+    border-top: ridge 2px;
+    padding-top: 4px;
+    margin-left: 20%;
+    font-size: 0.8em;
+
+}

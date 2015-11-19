@@ -83,3 +83,12 @@ input[type="submit"] {
             filter: drop-shadow( 5px 5px 5px #000 );
     transform: translate3d(-5px, -5px, -5px);
 }
+
+.ngfb-buttons {
+    text-align: right;
+    direction: ltr;
+}
+
+.ngfb-buttons > .fb-like {
+    direction: rtl;
+}
